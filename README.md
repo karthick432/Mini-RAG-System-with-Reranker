@@ -32,8 +32,8 @@ This project implements a **lightweight Retrieval-Augmented Generation (RAG) sys
 ├── requirements.txt # Python dependencies
 └── README.md # Project documentation
 
-▶️ Running the Project
-1️⃣ Start the backend
+- ▶️ Running the Project
+- 1️⃣ Start the backend
 - python -m scripts.api
 The backend runs on http://127.0.0.1:5000 by default.
 - streamlit run app.py
