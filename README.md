@@ -24,29 +24,29 @@ This project implements a **lightweight Retrieval-Augmented Generation (RAG) sys
 ## 📂 Project Structure
 
 .
-├── scripts/
-│ ├── api.py # Flask backend
-│ ├── retriever.py # Document retrieval logic
-│ └── reranker.py # Reranking logic
-├── app.py # Streamlit frontend
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
+- ├── scripts/
+- │ ├── api.py # Flask backend
+- │ ├── retriever.py # Document retrieval logic
+- │ └── reranker.py # Reranking logic
+- ├── app.py # Streamlit frontend
+- ├── requirements.txt # Python dependencies
+- └── README.md # Project documentation
 
 - ▶️ Running the Project
 - 1️⃣ Start the backend
 - python -m scripts.api
-The backend runs on http://127.0.0.1:5000 by default.
+- The backend runs on http://127.0.0.1:5000 by default.
 - streamlit run app.py
-This opens a browser where you can type queries and see results.
+- This opens a browser where you can type queries and see results.
 
-📡 API Usage
+## 📡 API Usage
 Endpoint: POST /ask
 
-Request JSON:
+### Request JSON:
 {
   "q": "What are machine safety rules?"
 }
-Response JSON:
+### Response JSON:
 {
   "query": "What are machine safety rules?",
   "reranker_used": "baseline",
